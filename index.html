@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Navbar Carousal & Modal:Using Bootstrap 5</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./bootstrap/css/bootstrap.min.css'>
+    <script src='./bootstrap/js/bootstrap.min.js'></script>
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">LOGO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-4 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Events
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Coming Events</a></li>
+              <li><a class="dropdown-item" href="#">Ongoing Events</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Events Category</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-secondary" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+</nav>
+<!--Carousel-->
+<div id="maincarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <!--carousal indicators-->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#maincarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#maincarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#maincarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!--carousal slides-->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/home-slider-1.jpg" class="d-block w-100" alt="Save Green For Future.">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Save Green For Future</h4>
+              <p>Ensure Green & Healthy Environment For Better Living World</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home-slider-2.jpg" class="d-block w-100" alt="Get Our Globe Green">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Get Our Globe Green</h3>
+              <p>Save The Environment and You will Save Life And Your Future</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home-slider-3.jpg" class="d-block w-100" alt="Grow Trees For Your Future">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Grow Trees For Your Future</h5>
+              <p>Reduce Acid Rain.. Save Environment.. Stop Pollution.. Global Warming..</p>
+            </div>
+          </div>
+        </div>
+
+        <!--carousal controls-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#maincarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>          
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#maincarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>         
+        </button>
+</div>
+<hr>
+<!--Modal-->
+<!-- Button trigger modal -->
+<div class="d-grid gap-2 col-4 mx-auto">
+<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#natureinfo">
+   Know More About Nature
+  </button>
+</div>
+  <!-- Modal -->
+  <div class="modal fade " id="natureinfo" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">About Nature</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <p><b>Nature, in the broadest sense, is the physical world or universe.</b> "Nature" can refer to the phenomena of the 
+            physical world, and also to life in general. The study of nature is a large, if not the only, part of science. 
+            Although humans are part of nature, human activity is often understood as a separate category from other 
+            natural phenomena.</p>
+            <p>Depending on the particular context, the term "natural" might also be distinguished from the unnatural or the supernatural.</p>
+            <h5>Some Simple Things You Can Do to Help Protect the Earth</h5>
+            <ul>
+            <li><b>Reduce, reuse, and recycle.</b> Cut down on what you throw away....</li>
+            <li><b>Volunteer.</b> Volunteer for cleanups in your community...</li>
+            <li> Educate...</li>
+            <li> Conserve water...</li>
+            <li> Choose sustainable...</li>
+            <li> <b>Shop wisely. </b>Buy less plastic and bring a reusable shopping bag</li>
+            <li>Use long-lasting light bulbs....</li>
+            <li>Plant a tree.</li>
+            <li>Don't send chemicals into our waterways.</li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

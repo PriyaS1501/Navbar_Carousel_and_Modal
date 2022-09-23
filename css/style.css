@@ -1,0 +1,15 @@
+.carousel-caption{
+    background:#000;
+    opacity: 0.8;
+}
+.navbar {
+    padding-top: 1.5rem!important;
+    padding-bottom: 1.5rem!important;
+    background: #ad7;
+}
+.dropdown-menu.show {
+    background: #daf9bc;
+}
+.navbar-nav .nav-link {
+    font-size: 18px;
+}
